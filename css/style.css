@@ -1,0 +1,283 @@
+:root {
+    --mimi-pink: #ffd6ff;
+    --mauve: #e7c6ff;
+    --mauve-2: #c8b6ff;
+    --periwinkle: #b8c0ff;
+    --periwinkle-2: #bbd0ff;
+
+    --text-color: #333;
+    --bg-color: var(--mimi-pink);
+    --button-color: var(--mauve-2);
+    --button-hover: var(--periwinkle);
+    --card-bg: #ffffffcc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--periwinkle-2);
+    color: #000000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+   padding-left: 750px;
+}
+
+
+nav ul {
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: rgb(56, 54, 54);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    overflow: hidde
+}
+
+.banner-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-texto h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.banner-texto p {
+    font-size: 1.2em;
+}
+
+
+.banner {
+    background: linear-gradient(135deg, var(--mimi-pink), var(--periwinkle-2));
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333;
+}
+
+.banner h1 {
+    font-size: 3em;
+    /* background-color: rgba(255, 255, 255, 0.6);*/
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.banner p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    /* background-color: rgba(255, 255, 255, 0.5);*/
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.sobre,
+.atracoes {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.atracoes {
+    padding: 40px 20px;
+    background-color: #ffd6ff;
+    text-align: center;
+  }
+  
+  .atracoes h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+button {
+    padding: 10px 20px;
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+}
+
+#mais-info {
+    margin-top: 15px;
+}
+
+.escondido {
+    display: none;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #f3e8ff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    padding: 12px;
+    background-color: #e7c6ff;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .card p:hover{
+    color: #88519e;
+  }
+.galeria-container {
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    justify-content: center;
+}
+
+.lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lado-esquerdo :hover{
+    transform: scale(1.01);
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+}
+
+.imagem {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border: 1px solid #88519e;
+    border-radius: 8px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.lado-direito {
+    width: 400px;
+    height: 620px;
+    border: 1px solid #88519e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.lado-direito :hover{
+    transform: scale(1.02);
+}
+
+.lado-direito img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+footer {
+    background-color: var(--periwinkle);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
