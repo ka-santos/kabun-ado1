@@ -1,12 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: #ffd6ff;
+  background: #e7c6ff;
   margin: 0;
   padding: 2em;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 600px;
   margin: auto;
   background: white;
   padding: 2em;
@@ -14,16 +14,37 @@ body {
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-h1, h2 {
+h1 {
   color: #6b4e9b;
+  text-align: center;
 }
 
-ul {
-  padding-left: 1.2em;
+label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
 }
 
-li {
-  margin-bottom: 0.5em;
+input, textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 0.5em;
+}
+
+button {
+  margin-top: 1.5em;
+  background-color: #c8b6ff;
+  color: white;
+  border: none;
+  padding: 0.8em 1.5em;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b8c0ff;
 }
 
 .voltar {
